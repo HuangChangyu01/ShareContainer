@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="65dp"
+        app:tb_leftImageResource="@mipmap/icon_back_white"
+        app:tb_sideTextPadding="20dp"
+        app:tb_titleText="扫码购物" />
+    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+        android:id="@+id/sao_re1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@mipmap/saokai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        app:sb_radius="6dp" />
+
+    <TextView
+        android:layout_below="@+id/sao_re1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="扫码开锁"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="135dp"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_r1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/beijin01" />
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff">
+
+
+        <EditText
+            android:id="@+id/uesr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="账号"
+            android:textSize="15sp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff">
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:textSize="15sp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/jizhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Denru"
+        android:layout_marginTop="20dp"
+        android:text="记住密码"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentLeft="true" />
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/Denru"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="10dp"
+        style="@style/ButtonView.Blue"
+        android:text="登入"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/Wanji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/jizhu"
+        android:layout_alignTop="@id/jizhu"
+        android:background="@null"
+        android:text="忘记密码?"
+        android:layout_marginLeft="205dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/zhuche"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="共享新用户"
+        style="@style/ButtonView.Green"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

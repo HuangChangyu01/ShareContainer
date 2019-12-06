@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.SetPassword.Frist_Setpaypwd">
+
+    <RelativeLayout
+        android:id="@+id/first_r1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+        <ImageButton
+            android:id="@+id/first_fanhui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:src="@mipmap/fanhui" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:text="设置支付密码"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/first_fanhui" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first_r2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/first_r1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/first_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="输入支付密码:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/first_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/nnn"
+            android:inputType="numberPassword"
+            android:letterSpacing="0.97"
+            android:maxLength="6"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/first_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/first_t1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:text="确认支付密码:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/first_pass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_pass"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/nnn"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:letterSpacing="0.97"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/first_buton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/first_pass"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="236dp"
+            android:background="@drawable/yaunjiao3"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_pass2"
+            android:layout_marginTop="36dp"
+            android:text="同意自动扣款协议方可使用支付服务"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

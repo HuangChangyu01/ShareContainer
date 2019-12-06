@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Charge.TopUpRecharge"
+    android:background="#f2f2f2">
+    <RelativeLayout
+        android:id="@+id/top_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+        <ImageButton
+            android:id="@+id/top_fanhui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            android:src="@mipmap/fanhui" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:text="余额充值"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/top_fanhui" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_r2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/top_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/top_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="充值金额"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/top_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/money"
+            android:inputType="number"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/top_buton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/top_money"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginLeft="86dp"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/yaunjiao3"
+            android:text="充值"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

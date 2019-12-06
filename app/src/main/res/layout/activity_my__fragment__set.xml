@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2"
+    tools:context=".User.My_Fragment_Set">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_titleText="设置" />
+
+    <LinearLayout
+        android:id="@+id/set_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:background="#FFFFFF"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        android:divider="@drawable/xiahuaxian"
+        android:showDividers="middle"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
+        <Button
+            android:id="@+id/set_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_button"
+            android:drawableLeft="@mipmap/pass"
+            android:drawableRight="@mipmap/jianhao"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/set_paypass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_button"
+            android:drawableLeft="@mipmap/paypass"
+            android:drawableRight="@mipmap/jianhao"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="修改支付密码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_zhuxiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_lin1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/message_button"
+        android:drawableLeft="@mipmap/zhuxiao"
+        android:drawableRight="@mipmap/jianhao"
+        android:drawablePadding="10dp"
+        android:text="注销"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/set_tuichu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_zhuxiao"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/message_button"
+        android:drawableLeft="@mipmap/tuichu"
+        android:drawableRight="@mipmap/jianhao"
+        android:drawablePadding="10dp"
+        android:text="退出"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

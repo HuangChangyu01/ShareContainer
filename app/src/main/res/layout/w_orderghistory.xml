@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+       <ListView
+           android:id="@+id/w_lv1"
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           android:layout_below="@+id/shopp_l1"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginRight="5dp"
+           android:background="@drawable/yaunjiao2"></ListView>
+    <TextView
+        android:id="@+id/wt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/w_money"
+        android:layout_alignTop="@id/w_money"
+        android:textColor="#000000"
+        android:text="合计:"/>
+
+    <TextView
+        android:id="@+id/w_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pay"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/pay"
+        android:text="￥0.00"
+        android:textColor="#ff8533" />
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/w_lv1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="付款"
+        android:textColor="#ffffff"
+        android:background="#ff8533"/>
+
+    <com.xuexiang.xui.widget.progress.loading.ARCLoadingView
+        android:id="@+id/abcd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:lv_auto="false"
+        app:lv_has_icon="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

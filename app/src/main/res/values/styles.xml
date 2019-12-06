@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- 自定义自己的主题样式 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/text_1</item>
+        <item name="colorControlActivated">@color/text_1</item>
+    </style>
+
+
+<!--    <style name="CustomAppTheme" parent="XUITheme.Phone">-->
+<!--        &lt;!&ndash;**********************************************-->
+<!--        *                   xui color                    *-->
+<!--        ***********************************************&ndash;&gt;-->
+<!--        &lt;!&ndash; CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色 &ndash;&gt;-->
+<!--        <item name="colorAccent">@color/custom_color_main_theme</item>-->
+<!--        &lt;!&ndash;应用的主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色&ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/custom_color_main_theme</item>-->
+<!--        &lt;!&ndash;应用的主要暗色调，statusBarColor默认使用该颜色&ndash;&gt;-->
+<!--        <item name="colorPrimaryDark">@color/custom_color_main_theme</item>-->
+<!--        <item name="colorControlNormal">@color/xui_config_color_control_normal</item>-->
+
+<!--        &lt;!&ndash;**********************************************-->
+<!--        *               通用颜色属性设置                    *-->
+<!--        ***********************************************&ndash;&gt;-->
+<!--        <item name="xui_config_color_error_text">@color/xui_config_color_red</item>-->
+<!--        <item name="xui_config_color_input_text">@color/xui_config_color_edittext_input_text</item>-->
+<!--        <item name="xui_config_color_hint_text">@color/xui_config_color_edittext_hint_text</item>-->
+<!--        <item name="xui_config_color_stroke">@color/xui_config_color_edittext_stroke</item>-->
+<!--        <item name="xui_config_color_disable">@color/xui_config_color_edittext_disable</item>-->
+<!--        <item name="xui_config_color_pressed">@color/xui_config_color_background_pressed</item>-->
+
+
+
+
+<!--        &lt;!&ndash;全局样式&ndash;&gt;-->
+<!--        <item name="xui_config_content_spacing_horizontal">16dp</item>-->
+<!--        <item name="xui_config_content_spacing_vertical">10dp</item>-->
+
+<!--        &lt;!&ndash;文字字号样式&ndash;&gt;-->
+<!--        <item name="xui_config_size_title_text">21sp</item>-->
+<!--        <item name="xui_config_size_content_text">18sp</item>-->
+<!--        <item name="xui_config_size_explain_text">14sp</item>-->
+<!--        <item name="xui_config_size_spinner_text">14sp</item>-->
+
+<!--        &lt;!&ndash;按钮样式&ndash;&gt;-->
+<!--        <item name="xui_btn_view_radius">8dp</item>-->
+<!--        <item name="xui_btn_view_width">@dimen/default_btn_view_width_phone</item>-->
+<!--        <item name="xui_btn_view_height">36dp</item>-->
+<!--        <item name="xui_btn_view_text_size">14sp</item>-->
+<!--        <item name="xui_btn_view_border_width">0.8dp</item>-->
+<!--        <item name="xui_config_icon_drawable_padding">8dp</item>-->
+
+<!--        &lt;!&ndash;输入框样式&ndash;&gt;-->
+<!--        <item name="xui_config_size_edittext_input_text">14sp</item>-->
+<!--        <item name="xui_config_size_edittext_helper_text">10sp</item>-->
+<!--        <item name="xui_config_size_edittext_components_spacing">8dp</item>-->
+<!--        <item name="xui_config_size_edittext_left_padding">12dp</item>-->
+<!--        <item name="xui_config_size_edittext_radius">5dp</item>-->
+<!--        <item name="xui_config_size_edittext_height">36dp</item>-->
+
+<!--        &lt;!&ndash;actionbar&ndash;&gt;-->
+<!--        <item name="xui_actionbar_height">60dp</item>-->
+<!--        <item name="xui_actionbar_title_text_size">21dp</item>-->
+<!--        <item name="xui_actionbar_action_text_size">18sp</item>-->
+<!--        <item name="xui_actionbar_sub_text_size">@dimen/xui_actionbar_sub_text_size_phone</item>-->
+<!--        <item name="xui_actionbar_action_padding">8dp</item>-->
+<!--        <item name="xui_actionbar_side_text_padding">15dp</item>-->
+
+<!--        &lt;!&ndash;spinner&ndash;&gt;-->
+<!--        <item name="ms_padding_left_size">10dp</item>-->
+<!--        <item name="ms_padding_top_size">8dp</item>-->
+<!--        <item name="ms_item_height_size">36dp</item>-->
+<!--        <item name="ms_dropdown_offset">2dp</item>-->
+<!--        <item name="ms_arrow_size">10dp</item>-->
+<!--        &lt;!&ndash;StatefulLayout&ndash;&gt;-->
+<!--        <item name="stf_progressbar_size">70dp</item>-->
+<!--        <item name="stf_tip_img_size">90dp</item>-->
+<!--        &lt;!&ndash;*********************************************-->
+<!--        *                  Dialog                       *-->
+<!--        **********************************************&ndash;&gt;-->
+<!--        <item name="xui_dialog_radius_size">8dp</item>-->
+<!--        <item name="xui_dialog_loading_padding_size">30dp</item>-->
+<!--        <item name="xui_dialog_loading_min_size">110dp</item>-->
+<!--        <item name="xui_dialog_mini_loading_padding_size">20dp</item>-->
+<!--        <item name="xui_dialog_mini_loading_min_size">100dp</item>-->
+<!--        <item name="xui_loading_view_size">85dp</item>-->
+<!--        <item name="xui_mini_loading_view_size">30dp</item>-->
+<!--        <item name="xui_loading_text_size">14sp</item>-->
+<!--        <item name="xui_loading_view_width">5dp</item>-->
+<!--        <item name="xui_loading_margin_size">8dp</item>-->
+<!--        <item name="xui_mini_loading_margin_size">15dp</item>-->
+<!--        <item name="mini_loading_view_size">25dp</item>-->
+<!--    </style>-->
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+    <FrameLayout
+        android:id="@+id/u_ib_f1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/u_in_lin1">
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/u_in_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/u_in_sao"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="扫码"
+            android:layout_marginTop="4dp"
+            android:drawableTop="@drawable/u_index_button2"
+            android:textColor="@drawable/u_index_textcolor"/>
+        <Button
+            android:id="@+id/u_in_ding"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/u_index_button3"
+            android:layout_marginTop="4dp"
+            android:text="订单"
+            android:textColor="@drawable/u_index_textcolor" />
+
+        <Button
+            android:id="@+id/u_in_my"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="4dp"
+            android:drawableTop="@drawable/u_index_button"
+            android:text="我的"
+            android:textColor="@drawable/u_index_textcolor"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

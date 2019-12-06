@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="65dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_titleText="信息" />
+
+    <RelativeLayout
+        android:id="@+id/my_r1"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="65dp"
+        android:background="@mipmap/blueback">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_imgb1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/tou" />
+
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="榕榕"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/my_imgb1"
+            android:layout_marginLeft="115dp"/>
+
+        <Button
+            android:id="@+id/my_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:text="ID:15605908865"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/my_name"
+            android:layout_alignBottom="@id/my_name"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_r2"
+        android:layout_width="500dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/my_r1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/yaunjiao">
+
+        <Button
+            android:id="@+id/my_bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawableTop="@mipmap/bao"
+            android:text="钱包"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="65dp" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_bao"
+            android:layout_marginTop="1dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="73dp" />
+
+        <Button
+            android:id="@+id/my_chong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawableTop="@mipmap/chong"
+            android:text="充值"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="121dp"
+            android:layout_toRightOf="@+id/my_bao" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/my_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_r2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/yaunjiao2"
+        android:drawableLeft="@mipmap/shezhi"
+        android:drawableRight="@mipmap/jianhao"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="设置"
+        android:textSize="25sp" />
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@+id/my_r2"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:background="@drawable/yaunjiao2">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+</RelativeLayout>
